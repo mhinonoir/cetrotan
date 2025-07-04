@@ -1,0 +1,210 @@
+html,
+body,
+:root {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    overflow-y: auto;
+}
+
+#page-content {
+    min-height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .content {
+        width: 90%;
+    }
+}
+
+.font-normal {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-extra-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.text-base {
+    font-size: 1rem /* 16px */;
+    line-height: 1.5rem /* 24px */;
+}
+
+.text-sm {
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+}
+
+.text-lg {
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+}
+
+.text-xl {
+    font-size: 1.875rem /* 30px */;
+    line-height: 2.25rem /* 36px */;
+}
+
+.text-xxl {
+    font-size: 3rem /* 48px */;
+    line-height: 1;
+}
+
+.primary-color {
+    color: #e74c3c;
+}
+
+.text-primary-color {
+    color: #2c3e50;
+}
+
+.hover_text-primary-color:hover {
+    color: #2c3e50;
+}
+
+.hover_primary-color:hover {
+    color: #e74c3c;
+}
+
+.size-sm {
+    width: 0.5rem /* 8px */;
+    height: 0.5rem /* 8px */;
+}
+
+.size-base {
+    width: 1rem /* 16px */;
+    height: 1rem /* 16px */;
+}
+
+/**********************************************************************************
+/********************************* NAV ********************************************
+***********************************************************************************/
+#nav-menu {
+    display: flex;
+    height: 100px;
+    box-shadow: 0 0 rgba(0,0,0,.4);
+}
+
+#nav-menu > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+}
+
+#nav-menu-title {
+    margin-right: auto;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 800px) {
+    #nav-menu > *:not(#nav-menu-title) {
+        display: none;
+    }
+
+    #nav-menu-title {
+        margin-left: auto;
+    }
+}
+
+/**********************************************************************************
+/******************************** FOOTER ******************************************
+***********************************************************************************/
+#footer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+#footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+/**********************************************************************************
+/********************************* HOME *******************************************
+***********************************************************************************/
+#home-banner {
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-image: url(../images/home-banner.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#home-banner-inner {
+    background-color: rgba(0,0,0,.5);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-banner-content {
+    text-align: center;
+    color: #fff;
+    padding: 16px;
+}
+
+/* HOME NAV MENU */
+#home-nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#home-nav-menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+#home-nav-menu-items a {
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    padding: 16px;
+    outline: none;
+    text-decoration: none;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
